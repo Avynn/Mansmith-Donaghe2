@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Trevor's amazing sports calculator</title>
+		<title>Sports ball</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=BioRhyme|Bungee|Bungee+Shade" rel="stylesheet">
 	</head>
 	<body>
 		<div class = "header">
-			<input type = "text" placeholder = "Team Name" id="name">
-			<input type = "text" placeholder = "Score Margin" id="scrMar">
-			<input type = "text" placeholder = "Three Point Percentage" id="threePntPrct">
-			<input type = "text" placeholder = "Rebound Margin" id="rebMar">
-			<input type = "text" placeholder = "Turn Over Margin" id="trnOvrMar">
-			<button class="btn">submit</button>
-			<button class="load">load</button>
+			<h1 class= "title">Sports-ball</h1>
+			<div class="inputs">
+				<input type = "text" placeholder = "Team Name" id="name">
+				<input type = "text" placeholder = "Free Throws Made" id="FreThrowMade">
+				<input type = "text" placeholder = "Feild Goal Percentage" id="feilGolPrct">
+				<input type = "text" placeholder = "Rebound Margin" id="rebMar">
+				<input type = "text" placeholder = "Turn Over Margin" id="trnOvrMar">
+				<button class="btn">submit</button>
+				<button class="load">load</button>
+			</div>
+		</div>
 		<div>
-		<table>
-			<tr class="teamName">Team Name</tr>
-			<tr class="ScrMar">Score Margin</tr>
-			<tr class="threePntPrct">Three Point Percentage</tr>
-			<tr class="rebMar">Rebound Margin</tr>
-			<tr class="trnOvrMar">Turn Over Margin</tr>
-		</table>
+			<table class="table">
+				<tr>
+					<th>Rank</th>
+					<th>Team name</th>
+					<th>Free Throws Made</th>
+					<th>Field Goal Percentage</th>
+					<th>Rebound Margin</th>
+					<th>Turnover Margin</th>
+				</tr>
+				<tr class="data">
+				</tr>
+			</table>
+		</div>
 		<script src="http://code.jquery.com/jquery-3.1.0.js"></script>
 		<script type ="text/javascript" src="script.js"></script>
 	</body>
